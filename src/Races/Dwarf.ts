@@ -10,6 +10,10 @@ export default class Dwarf extends Race {
     this._maxLifePoints = 80;
   }
 
+  private static addInstance(): void {
+    this._createdInstances += 1;
+  }
+
   static createdRacesInstances(): number {
     return Dwarf._createdInstances;
   }

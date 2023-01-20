@@ -10,6 +10,10 @@ export default class Halfling extends Race {
     this._maxLifePoints = 60;
   }
 
+  private static addInstance(): void {
+    this._createdInstances += 1;
+  }
+
   static createdRacesInstances(): number {
     return Halfling._createdInstances;
   }

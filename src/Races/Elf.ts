@@ -10,6 +10,10 @@ export default class Elf extends Race {
     this._maxLifePoints = 99;
   }
 
+  private static addInstance(): void {
+    this._createdInstances += 1;
+  }
+
   static createdRacesInstances(): number {
     return Elf._createdInstances;
   }
